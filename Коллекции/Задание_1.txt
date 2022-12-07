@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp21
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            char[] x = { 'g', 'k', 'C', 'D', 'o' };
+
+            var q = x.Any(n => n == 'o') ? x.Count(n => n == 'o').ToString() : "Нету";
+            Console.WriteLine(q);
+
+
+            Console.WriteLine($"Индекс:  {Array.IndexOf(x, 'o')}");
+
+            Console.ReadKey();
+
+        }
+    }
+}
